@@ -5,12 +5,10 @@
 var expect = function(val) {
     // var a = "Hello World!";
     // return {"a":a};
-    var toBe = function (val2){
-        if(val===val2){
-            return {"toBe": true};
-        }
-        else return {"toBe": "Not Equal"};
+    toBe : function (val2){
+        return val === val2;
     }
+
 };
 
 console.log(expect(5).toBe(5));
